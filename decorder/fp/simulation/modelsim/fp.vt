@@ -1,0 +1,43 @@
+
+`timescale 100 ms/ 100ms
+module fp_vlg_tst();
+// constants                                           
+// general purpose registers
+// reg eachvec;
+// test vector input registers
+reg clkin;
+// wires                                               
+wire clkout;
+
+// assign statements (if any)                          
+fp i1 (
+// port map - connection between master ports and signals/registers   
+	.clkin(clkin),
+	.clkout(clkout)
+);
+initial                                                
+begin                                                  
+// code that executes only once                        
+// insert code here --> begin                          
+                                                       
+// --> end     
+clkin = 0;
+# 5 clkin = 1;
+# 2 clkin = 0;
+# 400 $finishh;
+
+                                       
+$display("Running testbench");                       
+end                                                    
+always                                                 
+// optional sensitivity list                           
+// @(event1 or event2 or .... eventn)                  
+begin                                                  
+// code executes for every event on sensitivity list   
+// insert code here --> begin                          
+                                                       
+// --> end   
+forever # 50 clkin = ~clkin;                                          
+end                                                    
+endmodule
+

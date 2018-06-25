@@ -1,0 +1,299 @@
+|timename
+co <= hour:inst.co
+clk => Tfp:tfp.clkin
+sw0 => controller:inst2.sw0
+sw0 => controller:inst3.sw0
+sw0 => controller:inst4.sw0
+key0 => counter:inst5.key0
+key0 => counter:inst1.key0
+key0 => hour:inst.key0
+key1 => counter:inst5.key1
+key2 => counter:inst1.key1
+key3 => hour:inst.key1
+hh[0] <= Dec7s:inst11.q[0]
+hh[1] <= Dec7s:inst11.q[1]
+hh[2] <= Dec7s:inst11.q[2]
+hh[3] <= Dec7s:inst11.q[3]
+hh[4] <= Dec7s:inst11.q[4]
+hh[5] <= Dec7s:inst11.q[5]
+hh[6] <= Dec7s:inst11.q[6]
+hh[7] <= Dec7s:inst11.q[7]
+hl[0] <= Dec7s:inst10.q[0]
+hl[1] <= Dec7s:inst10.q[1]
+hl[2] <= Dec7s:inst10.q[2]
+hl[3] <= Dec7s:inst10.q[3]
+hl[4] <= Dec7s:inst10.q[4]
+hl[5] <= Dec7s:inst10.q[5]
+hl[6] <= Dec7s:inst10.q[6]
+hl[7] <= Dec7s:inst10.q[7]
+mh[0] <= Dec7s:inst9.q[0]
+mh[1] <= Dec7s:inst9.q[1]
+mh[2] <= Dec7s:inst9.q[2]
+mh[3] <= Dec7s:inst9.q[3]
+mh[4] <= Dec7s:inst9.q[4]
+mh[5] <= Dec7s:inst9.q[5]
+mh[6] <= Dec7s:inst9.q[6]
+mh[7] <= Dec7s:inst9.q[7]
+ml[0] <= Dec7s:inst8.q[0]
+ml[1] <= Dec7s:inst8.q[1]
+ml[2] <= Dec7s:inst8.q[2]
+ml[3] <= Dec7s:inst8.q[3]
+ml[4] <= Dec7s:inst8.q[4]
+ml[5] <= Dec7s:inst8.q[5]
+ml[6] <= Dec7s:inst8.q[6]
+ml[7] <= Dec7s:inst8.q[7]
+s[0] <= Dec7s:inst6.q[0]
+s[1] <= Dec7s:inst6.q[1]
+s[2] <= Dec7s:inst6.q[2]
+s[3] <= Dec7s:inst6.q[3]
+s[4] <= Dec7s:inst6.q[4]
+s[5] <= Dec7s:inst6.q[5]
+s[6] <= Dec7s:inst6.q[6]
+s[7] <= Dec7s:inst6.q[7]
+sh[0] <= Dec7s:inst7.q[0]
+sh[1] <= Dec7s:inst7.q[1]
+sh[2] <= Dec7s:inst7.q[2]
+sh[3] <= Dec7s:inst7.q[3]
+sh[4] <= Dec7s:inst7.q[4]
+sh[5] <= Dec7s:inst7.q[5]
+sh[6] <= Dec7s:inst7.q[6]
+sh[7] <= Dec7s:inst7.q[7]
+
+
+|timename|hour:inst
+clkin => co~reg0.CLK
+clkin => high[0]~reg0.CLK
+clkin => high[1]~reg0.CLK
+clkin => high[2]~reg0.CLK
+clkin => high[3]~reg0.CLK
+clkin => low[0]~reg0.CLK
+clkin => low[1]~reg0.CLK
+clkin => low[2]~reg0.CLK
+clkin => low[3]~reg0.CLK
+clkin => count[0].CLK
+clkin => count[1].CLK
+clkin => count[2].CLK
+clkin => count[3].CLK
+clkin => count[4].CLK
+clkin => count[5].CLK
+clkin => count[6].CLK
+clkin => count[7].CLK
+key0 => always0.IN0
+key1 => always0.IN1
+low[0] <= low[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+low[1] <= low[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+low[2] <= low[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+low[3] <= low[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+high[0] <= high[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+high[1] <= high[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+high[2] <= high[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+high[3] <= high[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+co <= co~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|timename|controller:inst4
+clkin => clkout$latch.DATAIN
+sw0 => clkout$latch.LATCH_ENABLE
+clkout <= clkout$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|timename|counter:inst1
+clkin => co~reg0.CLK
+clkin => high[0]~reg0.CLK
+clkin => high[1]~reg0.CLK
+clkin => high[2]~reg0.CLK
+clkin => high[3]~reg0.CLK
+clkin => low[0]~reg0.CLK
+clkin => low[1]~reg0.CLK
+clkin => low[2]~reg0.CLK
+clkin => low[3]~reg0.CLK
+clkin => count[0].CLK
+clkin => count[1].CLK
+clkin => count[2].CLK
+clkin => count[3].CLK
+clkin => count[4].CLK
+clkin => count[5].CLK
+clkin => count[6].CLK
+clkin => count[7].CLK
+key0 => always0.IN0
+key1 => always0.IN1
+low[0] <= low[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+low[1] <= low[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+low[2] <= low[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+low[3] <= low[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+high[0] <= high[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+high[1] <= high[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+high[2] <= high[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+high[3] <= high[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+co <= co~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|timename|controller:inst3
+clkin => clkout$latch.DATAIN
+sw0 => clkout$latch.LATCH_ENABLE
+clkout <= clkout$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|timename|counter:inst5
+clkin => co~reg0.CLK
+clkin => high[0]~reg0.CLK
+clkin => high[1]~reg0.CLK
+clkin => high[2]~reg0.CLK
+clkin => high[3]~reg0.CLK
+clkin => low[0]~reg0.CLK
+clkin => low[1]~reg0.CLK
+clkin => low[2]~reg0.CLK
+clkin => low[3]~reg0.CLK
+clkin => count[0].CLK
+clkin => count[1].CLK
+clkin => count[2].CLK
+clkin => count[3].CLK
+clkin => count[4].CLK
+clkin => count[5].CLK
+clkin => count[6].CLK
+clkin => count[7].CLK
+key0 => always0.IN0
+key1 => always0.IN1
+low[0] <= low[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+low[1] <= low[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+low[2] <= low[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+low[3] <= low[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+high[0] <= high[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+high[1] <= high[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+high[2] <= high[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+high[3] <= high[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+co <= co~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|timename|controller:inst2
+clkin => clkout$latch.DATAIN
+sw0 => clkout$latch.LATCH_ENABLE
+clkout <= clkout$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|timename|Tfp:tfp
+clkin => clkout~reg0.CLK
+clkin => count[0].CLK
+clkin => count[1].CLK
+clkin => count[2].CLK
+clkin => count[3].CLK
+clkin => count[4].CLK
+clkin => count[5].CLK
+clkin => count[6].CLK
+clkin => count[7].CLK
+clkin => count[8].CLK
+clkin => count[9].CLK
+clkin => count[10].CLK
+clkin => count[11].CLK
+clkin => count[12].CLK
+clkin => count[13].CLK
+clkin => count[14].CLK
+clkin => count[15].CLK
+clkin => count[16].CLK
+clkin => count[17].CLK
+clkin => count[18].CLK
+clkin => count[19].CLK
+clkin => count[20].CLK
+clkin => count[21].CLK
+clkin => count[22].CLK
+clkin => count[23].CLK
+clkin => count[24].CLK
+clkin => count[25].CLK
+clkin => count[26].CLK
+clkin => count[27].CLK
+clkin => count[28].CLK
+clkin => count[29].CLK
+clkin => count[30].CLK
+clkout <= clkout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|timename|Dec7s:inst11
+a[0] => Decoder0.IN3
+a[1] => Decoder0.IN2
+a[2] => Decoder0.IN1
+a[3] => Decoder0.IN0
+q[0] <= WideOr7.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|timename|Dec7s:inst10
+a[0] => Decoder0.IN3
+a[1] => Decoder0.IN2
+a[2] => Decoder0.IN1
+a[3] => Decoder0.IN0
+q[0] <= WideOr7.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|timename|Dec7s:inst9
+a[0] => Decoder0.IN3
+a[1] => Decoder0.IN2
+a[2] => Decoder0.IN1
+a[3] => Decoder0.IN0
+q[0] <= WideOr7.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|timename|Dec7s:inst8
+a[0] => Decoder0.IN3
+a[1] => Decoder0.IN2
+a[2] => Decoder0.IN1
+a[3] => Decoder0.IN0
+q[0] <= WideOr7.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|timename|Dec7s:inst6
+a[0] => Decoder0.IN3
+a[1] => Decoder0.IN2
+a[2] => Decoder0.IN1
+a[3] => Decoder0.IN0
+q[0] <= WideOr7.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|timename|Dec7s:inst7
+a[0] => Decoder0.IN3
+a[1] => Decoder0.IN2
+a[2] => Decoder0.IN1
+a[3] => Decoder0.IN0
+q[0] <= WideOr7.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

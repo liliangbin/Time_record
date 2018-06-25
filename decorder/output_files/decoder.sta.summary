@@ -1,0 +1,113 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clkin'
+Slack : -4.161
+TNS   : -59.216
+
+Type  : Slow 1200mV 85C Model Setup 'fp9:inst5|clkout'
+Slack : -0.899
+TNS   : -2.478
+
+Type  : Slow 1200mV 85C Model Setup 'bcd_counter:inst7|cnt4:inst|cout'
+Slack : -0.861
+TNS   : -2.302
+
+Type  : Slow 1200mV 85C Model Hold 'bcd_counter:inst7|cnt4:inst|cout'
+Slack : 0.388
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'fp9:inst5|clkout'
+Slack : 0.403
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clkin'
+Slack : 0.655
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clkin'
+Slack : -3.000
+TNS   : -44.120
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'bcd_counter:inst7|cnt4:inst|cout'
+Slack : -1.285
+TNS   : -6.425
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'fp9:inst5|clkout'
+Slack : -1.285
+TNS   : -6.425
+
+Type  : Slow 1200mV 0C Model Setup 'clkin'
+Slack : -3.760
+TNS   : -49.724
+
+Type  : Slow 1200mV 0C Model Setup 'fp9:inst5|clkout'
+Slack : -0.710
+TNS   : -1.840
+
+Type  : Slow 1200mV 0C Model Setup 'bcd_counter:inst7|cnt4:inst|cout'
+Slack : -0.671
+TNS   : -1.681
+
+Type  : Slow 1200mV 0C Model Hold 'bcd_counter:inst7|cnt4:inst|cout'
+Slack : 0.342
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'fp9:inst5|clkout'
+Slack : 0.354
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clkin'
+Slack : 0.598
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clkin'
+Slack : -3.000
+TNS   : -44.120
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'bcd_counter:inst7|cnt4:inst|cout'
+Slack : -1.285
+TNS   : -6.425
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'fp9:inst5|clkout'
+Slack : -1.285
+TNS   : -6.425
+
+Type  : Fast 1200mV 0C Model Setup 'clkin'
+Slack : -1.601
+TNS   : -13.342
+
+Type  : Fast 1200mV 0C Model Setup 'fp9:inst5|clkout'
+Slack : 0.070
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'bcd_counter:inst7|cnt4:inst|cout'
+Slack : 0.086
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'bcd_counter:inst7|cnt4:inst|cout'
+Slack : 0.181
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'fp9:inst5|clkout'
+Slack : 0.181
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clkin'
+Slack : 0.298
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clkin'
+Slack : -3.000
+TNS   : -36.984
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'bcd_counter:inst7|cnt4:inst|cout'
+Slack : -1.000
+TNS   : -5.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'fp9:inst5|clkout'
+Slack : -1.000
+TNS   : -5.000
+
+------------------------------------------------------------

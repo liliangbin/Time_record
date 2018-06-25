@@ -1,0 +1,15 @@
+|BtoH
+i4[0] => Decoder0.IN4
+i4[1] => Decoder0.IN3
+i4[2] => Decoder0.IN2
+i4[3] => Decoder0.IN1
+i4[4] => Decoder0.IN0
+o7[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+o7[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+o7[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+o7[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+o7[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+o7[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+o7[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

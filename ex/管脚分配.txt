@@ -1,0 +1,19 @@
+To,            Location
+clkin,        PIN_Y2
+clr,	  PIN_AB28
+cn,          	PIN_G19
+low_seg[6],	   PIN_H22
+low_seg[5],	   PIN_J22
+low_seg[4],	   PIN_L25
+low_seg[3],	   PIN_L26
+low_seg[2],	   PIN_E17
+low_seg[1],	   PIN_F22
+low_seg[0],	   PIN_G18
+high_seg[6],	PIN_U24
+high_seg[5],	PIN_U23
+high_seg[4],	PIN_W25
+high_seg[3],	PIN_W22
+high_seg[2],	PIN_W21
+high_seg[1],	PIN_Y22
+high_seg[0],	PIN_M24
+

@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Jun 21 20:37:55 2018
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+Revision Name : extre
+Top-level Entity Name : extre
+Family : Cyclone IV E
+Total logic elements : 1,154
+    Total combinational functions : 1,154
+    Dedicated logic registers : 105
+Total registers : 105
+Total pins : 56
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

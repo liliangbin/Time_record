@@ -1,0 +1,113 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'pin_name1'
+Slack : -4.082
+TNS   : -64.746
+
+Type  : Slow 1200mV 85C Model Setup 'fp:inst1|clkout'
+Slack : -0.406
+TNS   : -1.131
+
+Type  : Slow 1200mV 85C Model Setup 'cnt4e:inst|cout'
+Slack : -0.272
+TNS   : -0.977
+
+Type  : Slow 1200mV 85C Model Hold 'cnt4e:inst|cout'
+Slack : 0.403
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'fp:inst1|clkout'
+Slack : 0.404
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'pin_name1'
+Slack : 0.644
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'pin_name1'
+Slack : -3.000
+TNS   : -44.120
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'cnt4e:inst|cout'
+Slack : -1.285
+TNS   : -6.425
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'fp:inst1|clkout'
+Slack : -1.285
+TNS   : -6.425
+
+Type  : Slow 1200mV 0C Model Setup 'pin_name1'
+Slack : -3.667
+TNS   : -55.097
+
+Type  : Slow 1200mV 0C Model Setup 'fp:inst1|clkout'
+Slack : -0.256
+TNS   : -0.622
+
+Type  : Slow 1200mV 0C Model Setup 'cnt4e:inst|cout'
+Slack : -0.144
+TNS   : -0.475
+
+Type  : Slow 1200mV 0C Model Hold 'fp:inst1|clkout'
+Slack : 0.353
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'cnt4e:inst|cout'
+Slack : 0.354
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'pin_name1'
+Slack : 0.587
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'pin_name1'
+Slack : -3.000
+TNS   : -44.120
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'cnt4e:inst|cout'
+Slack : -1.285
+TNS   : -6.425
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'fp:inst1|clkout'
+Slack : -1.285
+TNS   : -6.425
+
+Type  : Fast 1200mV 0C Model Setup 'pin_name1'
+Slack : -1.540
+TNS   : -16.440
+
+Type  : Fast 1200mV 0C Model Setup 'fp:inst1|clkout'
+Slack : 0.305
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'cnt4e:inst|cout'
+Slack : 0.375
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'cnt4e:inst|cout'
+Slack : 0.182
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'fp:inst1|clkout'
+Slack : 0.182
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'pin_name1'
+Slack : 0.294
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'pin_name1'
+Slack : -3.000
+TNS   : -36.984
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'cnt4e:inst|cout'
+Slack : -1.000
+TNS   : -5.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'fp:inst1|clkout'
+Slack : -1.000
+TNS   : -5.000
+
+------------------------------------------------------------
